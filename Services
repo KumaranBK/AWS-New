@@ -1,0 +1,54 @@
+✅ What are “Core AWS Services”?
+Core services are like the main building blocks of AWS.
+Just like you need bricks, cement, and wood to build a house,
+You need services like EC2, S3, RDS, IAM, and VPC to build anything on AWS.
+
+Don’t worry — we’ll keep it super simple.
+
+🧱 1. EC2 (Elastic Compute Cloud)
+🖥️ Think of EC2 as a virtual computer you can rent from AWS.
+
+You can use it to run apps or websites.
+It’s just like your laptop — but in the cloud.
+You can choose how powerful it is (like picking RAM and CPU).
+Example: Want to host a game server or a website? EC2 can run it.
+
+📦 2. S3 (Simple Storage Service)
+💾 Think of S3 as your cloud hard drive.
+
+You can store files like images, videos, or documents.
+It’s safe, reliable, and can hold huge amounts of data.
+Many apps and websites use S3 to store things in the background.
+Example: Storing user profile pictures or backups.
+
+🔐 3. IAM (Identity and Access Management)
+🧑‍💻 IAM helps you control who can do what in your AWS account.
+
+You can create users and give them permissions.
+You can allow someone to access only S3 but not EC2.
+Keeps your AWS account secure and organized.
+Example: Your developer can access servers, but your intern only sees billing info.
+
+🌐 4. VPC (Virtual Private Cloud)
+🛡️ VPC is like your own private network in the cloud.
+
+It’s a secure place where your AWS resources live.
+You control how they connect to each other and the internet.
+Keeps your systems safe and isolated.
+Example: A private area where your database stays hidden from the internet.
+
+🗄️ 5. RDS (Relational Database Service)
+🗃️ RDS is a managed database service.
+
+It lets you use databases like MySQL, PostgreSQL, or SQL Server.
+AWS handles the setup, backups, and updates.
+You just focus on using the data — not maintaining it.
+Example: An app that saves user data in a database.
+
+💡 Bonus: Others You Might Hear About Later
+Service	What It Does
+Lambda	Run code without a server
+CloudFront	Speed up websites worldwide
+CloudWatch	Monitor your AWS resources
+SNS/SQS	Messaging and notifications
+We’ll go deeper into these on later days!
