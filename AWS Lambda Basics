@@ -1,0 +1,58 @@
+AWS Lambda Basics – Run Code Without Managing Servers
+
+⚙️ 1. What is AWS Lambda?
+AWS Lambda is a serverless compute service.
+This means you can run your code without creating or managing servers.
+
+➡️ You upload your code to AWS, and AWS takes care of the rest — running, scaling, and stopping it.
+
+🔹 2. How Does Lambda Work?
+Here’s the basic idea:
+
+You write some code (Python, Node.js, Java, etc.)
+Upload it as a Lambda function
+Set a trigger (like a file upload or API request)
+AWS runs your code automatically when needed
+You’re only charged for the time it runs
+🧾 No need to think about servers, memory, CPU, or scaling — AWS handles it all!
+
+📘 3. Key Terms Simplified:
+Term	What It Means for You
+Lambda Function	Your uploaded code + settings in AWS
+Trigger	What causes your code to run (e.g. file upload, API call, timer)
+Runtime	The language you write code in (Python, Node.js, etc.)
+Event	The input or action that starts the function
+Timeout	Max time your function is allowed to run (default is 3 sec)
+💡 4. Why Use Lambda?
+✅ No server setup
+✅ You only pay when your code runs
+✅ Scales automatically — handles 1 or 1 million requests
+✅ Connects with many AWS services
+✅ Perfect for quick automation, APIs, and event handling
+⚡ 5. Common Lambda Triggers
+Trigger Type	Example Use Case
+S3	Auto-resize an image when uploaded to S3
+API Gateway	Run code when an API is called
+CloudWatch	Run code on a daily schedule (cron jobs)
+DynamoDB	React when data changes in the table
+SNS/SQS	Run code when a message is received
+🧩 6. Beginner Example:
+Goal: Say hello when someone uploads a file to S3.
+
+Create a Lambda function in Python
+Trigger: When file uploaded to a bucket
+Code prints: “Hello, file received!”
+🔧 AWS takes care of everything — you just focus on the logic.
+
+🚀 7. Try It Yourself (Free Tier):
+Go to AWS Console → Lambda
+Click Create function → “Author from scratch”
+Choose Python or Node.js
+Paste this simple code: def lambda_handler(event, context): return {“statusCode”: 200, “body”: “Hello from Lambda”}
+Click Test to see your function in action!
+⚠️ 8. Key Limits to Know
+Max runtime: 15 minutes
+Memory: 128MB to 10GB
+Free tier: 1 million requests per month
+Keep your code small and fast
+For big apps, use Lambda Layers to manage dependencies
