@@ -1,0 +1,53 @@
+IAM Basics — Control Who Can Do What in AWS
+
+👥 What is IAM?
+IAM stands for Identity and Access Management.
+
+It helps you securely control who can access your AWS resources — like S3 buckets, EC2 instances, and more.
+
+🧠 Think of IAM as:
+
+“A security gatekeeper that decides who can enter, and what they’re allowed to do.”
+
+✅ Why is IAM Important?
+Keeps your account safe from misuse
+Lets you create different users for your team
+Allows you to limit access (e.g., one user can only view S3, another can launch EC2)
+📖 IAM Basic Concepts (Made Simple)
+Term	What It Means
+User	A person or application that logs in
+Group	A collection of users with shared permissions
+Role	A temporary identity for apps/services
+Policy	A set of rules that define what is allowed or denied
+Permissions	What a user can or can’t do in AWS
+Root User	The main admin — never use it for daily tasks!
+🛠️ Step-by-Step: Create an IAM User
+Go to AWS Console → Search for IAM → Open it
+In the left menu, click “Users” → Click “Add users”
+Choose:
+Username: (e.g., developer1)
+Check ✅ “Access key – Programmatic access” (optional)
+Check ✅ “Password – AWS Management Console access”
+Set a password (temporary is fine)
+On the Permissions screen:
+Choose “Attach existing policies directly”
+Search for AdministratorAccess (just for demo) and select it
+Click “Next” → “Create user”
+🎉 You now have a new AWS user!
+
+🔑 Sign in as the New User
+IAM will give you a login link like:
+https://1234567890.signin.aws.amazon.com/console
+Open it and log in using the new user’s credentials
+Now you’re using AWS without the root account — much safer!
+
+🔏 Policies (Very Simply)
+A policy is a document that says:
+
+“This user/group/role can or cannot do these things.”
+
+Example:
+
+Allow user to read S3
+Deny user from deleting EC2
+Policies are written in JSON (don’t worry — we’ll simplify that later).
