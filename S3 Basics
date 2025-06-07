@@ -1,0 +1,42 @@
+S3 Basics — Store Your First File in the Cloud
+
+📦 What is Amazon S3?
+S3 stands for Simple Storage Service.
+
+It’s like a giant online locker where you can keep any kind of file — photos, videos, PDFs, backups, app data, etc.
+
+🧠 Think of it as:
+
+“Google Drive, but for developers and companies, and way more powerful.”
+
+🧱 Basic S3 Terms (explained simply):
+Term	What It Means (in plain English)
+Bucket	A folder that holds your files. You must create a bucket before adding files.
+Object	Any file (image, document, video) you upload is called an object.
+Key	The name and path of the file inside the bucket.
+Region	Where your bucket is stored (choose one close to you).
+Storage Class	Tells AWS how often you’ll access the file. Cheaper if rarely accessed.
+🛠️ Step-by-Step: Create Your First S3 Bucket
+Go to the AWS Console
+Sign in at console.aws.amazon.com
+Search for “S3” in the top search bar
+Click the first result.
+Click “Create bucket”
+Fill in the details:
+Bucket name: Must be globally unique (e.g., my-first-bucket-2025)
+Region: Choose your region (e.g., US East (N. Virginia))
+Leave everything else as default for now.
+Scroll down and click “Create bucket”
+🎉 You’ve created your first cloud folder!
+
+📤 Upload Your First File
+Click on your bucket name
+Click “Upload”
+Click “Add files” and choose any file (e.g., a photo or .txt file)
+Click “Upload”
+Now your file is safely stored in AWS S3!
+
+🔒 What About Security?
+By default, your bucket and files are private.
+Nobody can access them unless you allow it.
+We’ll explore permissions and sharing in a future lesson
