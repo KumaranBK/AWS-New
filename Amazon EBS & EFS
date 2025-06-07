@@ -1,0 +1,46 @@
+Amazon EBS & EFS – Learn AWS Storage Basics
+
+?
+📦 1. What is Amazon EBS?
+EBS = Elastic Block Store
+Think of EBS like the hard drive of a virtual computer (your EC2 instance).
+
+🔹 Key Points:
+Attached to EC2 like a C: drive in Windows
+Stores operating system, software, and data
+Can be backed up using Snapshots
+You can increase the size anytime
+If you stop the EC2, the EBS volume is still there
+💡 Example:
+If your EC2 instance is a laptop, then EBS is the internal hard drive where Windows and files are saved.
+
+🗂 2. What is Amazon EFS?
+EFS = Elastic File System
+Think of EFS like a shared folder that many EC2 instances can access together.
+
+🔹 Key Points:
+Works like a network drive
+Multiple EC2 instances can connect to the same EFS
+Data stored grows automatically (no size limit)
+Useful for shared access (websites, apps needing file access)
+💡 Example:
+You have 3 EC2 servers running a website. They all need to read and write files to the same folder — EFS helps you do that.
+
+🔁 3. EBS vs EFS vs S3 – What’s the Difference?
+Feature	EBS (Block)	EFS (File)	S3 (Object – from Day 4)
+Use with	EC2 (one instance)	EC2 (many instances)	Any app or service
+Speed	High	Medium–High	Depends on use
+Grows auto?	No (manual resize)	Yes	Yes
+Shared use?	No	Yes	Yes
+Best for	OS, app data	Shared folders	Images, videos, backups
+
+✅ What You Should Do Today:
+✅ Watch:
+👉 YouTube search: “AWS EBS vs EFS for beginners”
+✅ Try in AWS Console (Free Tier):
+Go to EC2 → Launch instance
+Check the Storage section → It uses EBS!
+Learn how to take a snapshot
+✅ Visualize:
+EBS = Pen drive for your EC2
+EFS = Shared Google Drive folder
