@@ -1,0 +1,54 @@
+Auto Scaling and Load Balancer – Keep Your App Fast & Available
+
+🔁 1. What is Auto Scaling?
+Auto Scaling in AWS means:
+➡️ Automatically adding or removing EC2 instances based on how much traffic your app is getting.
+
+🔹 Key Points:
+If traffic increases, Auto Scaling launches more EC2 instances
+If traffic drops, it removes extra EC2s to save money
+You set rules (e.g., “Add more EC2s if CPU > 70%”)
+Works with Launch Templates and Target Groups
+💡 Example:
+Your shopping site gets lots of visitors during a sale. Auto Scaling adds 5 more EC2s. After the sale, it removes them — all done automatically!
+
+🧭 2. What is a Load Balancer?
+Load Balancer = A traffic controller that distributes incoming traffic to multiple EC2 instances.
+
+🔹 Key Points:
+Spreads traffic evenly
+Keeps your app fast and available
+Works with Auto Scaling — new instances get added to the Load Balancer automatically
+Supports health checks (removes unhealthy EC2s)
+💡 Example:
+If 100 users visit your app, the Load Balancer sends 50 to Server A and 50 to Server B — no overload!
+
+⚙️ 3 Types of Load Balancers in AWS:
+Load Balancer Type	Use Case
+ALB (Application)	For websites & apps (Layer 7)
+NLB (Network)	For high-performance needs (Layer 4)
+CLB (Classic)	Older version, less used now
+💡 Beginners should focus on ALB — it’s used for most websites and web apps.
+
+🧩 Auto Scaling + Load Balancer Together
+They work hand in hand:
+
+✅ Load Balancer sends traffic to all EC2s
+✅ Auto Scaling adds/removes EC2s based on load
+✅ This keeps your app fast, healthy, and cost-efficient
+
+🔐 Why Does This Matter?
+🟢 High Availability: Your app stays online even if one server crashes
+⚙️ Performance: Handles more users smoothly
+💰 Cost Savings: Only pay for what you need
+🔄 Hands-Free Scaling: Set it once, AWS manages the rest
+✅ What You Should Do Today:
+✅ Watch:
+👉 YouTube: “AWS Auto Scaling and Load Balancer for Beginners”
+✅ Explore in AWS Console (Free Tier):
+Go to EC2 → Launch Template
+Explore the “Auto Scaling Groups” section
+Check EC2 → Load Balancers tab
+✅ Visualize:
+Auto Scaling = Hiring more workers only when needed
+Load Balancer = Manager assigning work evenly to workers
