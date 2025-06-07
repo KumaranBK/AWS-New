@@ -1,0 +1,20 @@
+EC2 Basics — Launch Your First Cloud Server
+
+Goal: Understand what EC2 is and launch your first virtual machine (server) using AWS EC2.
+If you’re using a Mac/Linux terminal or Windows with WSL or Git Bash:
+
+bash:
+
+chmod 400 your-key.pem
+ssh -i your-key.pem ec2-user@your-public-ip
+
+
+Use the public IP from the instance page
+Accept the SSH connection prompt
+Now you’re inside your cloud computer!
+
+🧽 Clean Up (Optional for Now)
+If you don’t want charges after the free tier:
+
+Go to EC2 > Instances
+Select your instance → Click Actions > Instance State > Terminate
