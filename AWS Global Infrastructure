@@ -1,0 +1,57 @@
+AWS Global Infrastructure – How AWS Works Around the World
+
+🌍 1. What is AWS Global Infrastructure?
+AWS is not just in one place. It’s a global network of data centers. These centers store your apps, websites, and services so users anywhere can access them quickly and reliably.
+
+📍 2. Key Terms You Must Know
+🔸 Region
+A Region is a geographical area like:
+
+US East (North Virginia)
+Europe (London)
+Asia Pacific (Mumbai)
+➡️ Each region has multiple data centers inside it.
+
+Think of a region as a city where AWS has a big office.
+
+🔸 Availability Zone (AZ)
+An Availability Zone is a physical data center inside a region.
+
+Each region has 2 or more AZs
+AZs are far enough to avoid disasters, but close enough to work together
+Services like EC2 or RDS can run across multiple AZs for high availability
+Think of AZs as separate buildings inside that city (region).
+
+🔸 Edge Location
+Edge Locations are used by Amazon CloudFront (CDN) to deliver content faster.
+
+Placed in more locations than regions
+Helps users access videos, images, or websites with less delay
+Think of edge locations as delivery centers close to the user’s home.
+
+🔁 How They Work Together:
+✅ You deploy in a Region
+✅ Your data lives in 2+ Availability Zones (for safety)
+✅ Users access content via Edge Locations (for speed)
+
+💡 Real-Life Analogy:
+AWS Term	Real-World Example
+Region	City (e.g., Mumbai)
+Availability Zone	Buildings in the city
+Edge Location	Local delivery center near customers
+🔐 Why Is This Important?
+Reliability: If one AZ fails, the other can take over
+Speed: Edge locations serve content faster
+Scalability: You can deploy apps close to your customers
+Compliance: You can store data in specific countries (as per laws)
+
+
+✅ What You Should Do Today:
+✅ Watch:
+👉 YouTube search: “AWS Regions vs AZ vs Edge Locations explained simply”
+✅ Explore:
+👉 Go to aws.amazon.com/about-aws/global-infrastructure
+👉 Hover over the world map and see active regions
+✅ Understand:
+Your app in AWS can run across 2 AZs in Mumbai
+Users in Delhi or London get content quickly via nearby Edge Locations
